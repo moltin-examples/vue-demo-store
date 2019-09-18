@@ -14,7 +14,7 @@
         <div class="field">
           <div class="two fields">
             <div class="field">
-              <input type="text"class="form-control" id="first-name" name="First Name" placeholder="First Name" v-model="payment_data.first_name" required>
+              <input type="text" class="form-control" id="first-name" name="First Name" placeholder="First Name" v-model="payment_data.first_name" required>
             </div>
             <div class="field">
               <input type="text" class="form-control" id="last-name" name="Last Name" placeholder="Last Name" v-model="payment_data.last_name" required>
@@ -25,7 +25,7 @@
         <div class="field">
           <div class="two fields">
             <div class="twelve wide field">
-              <input type="text"class="form-control" id="card-number" name="Card Number" placeholder="Card Number" v-model="payment_data.number" required>
+              <input type="text" class="form-control" id="card-number" name="Card Number" placeholder="Card Number" v-model="payment_data.number" required>
             </div>
             <div class="four wide field">
               <input type="text" class="form-control" id="cvv" name="CVV" placeholder="CVV" v-model="payment_data.verification_value" required>
@@ -36,7 +36,7 @@
         <div class="field">
           <div class="two fields">
             <div class="eight wide field">
-              <input type="text"class="form-control" id="expiry-month" name="Expiry Month" placeholder="Expiry Month" v-model="payment_data.month" required>
+              <input type="text" class="form-control" id="expiry-month" name="Expiry Month" placeholder="Expiry Month" v-model="payment_data.month" required>
             </div>
             <div class="eight wide field">
               <input type="text" class="form-control" id="expiry-year" name="Expiry Year" placeholder="Expiry Year" v-model="payment_data.year" required>
