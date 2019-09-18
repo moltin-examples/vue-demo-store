@@ -6,11 +6,11 @@ const Moltin = MoltinGateway({
 
 export default {
 
-  getHomepageProducts () {
+  getHomepageProducts() {
     return Moltin.Products.Filter({}).With('main_image').Limit(8).All()
   },
 
-  findBySlug (slug) {
+  findBySlug(slug) {
     return Moltin.Products.Filter({
       eq: {
         slug: slug
@@ -18,23 +18,23 @@ export default {
     }).With(['main_image', 'brands']).Limit(1).All()
   },
 
-  getCart () {
+  getCart() {
     return Moltin.Cart().Items()
   },
 
-  addToCart (productId, qty) {
+  addToCart(productId, qty) {
     return Moltin.Cart().AddProduct(productId, qty)
   },
 
-  removeFromCart (itemId) {
+  removeFromCart(itemId) {
     return Moltin.Cart().RemoveItem(itemId)
   },
 
-  checkout (customerId, billing, shipping) {
+  checkout(customerId, billing, shipping) {
     return Moltin.Cart().Checkout(customerId, billing, shipping)
   },
 
-  pay (orderId, paymentData) {
+  pay(orderId, paymentData) {
     return Moltin.Orders.Payment(orderId, paymentData)
   }
 
